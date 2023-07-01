@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Travel reservation form</legend>
+
+        <h2>* denotes mandotory</h2>
+
+        <label for="FirstName">FirstName*:</label>
+        <input type="text" name="FirstName" placeholder="Enter your First Name" required>
+
+        <label for="LastName">LastName*:</label>
+        <input type="text" name="LastName" placeholder="Enter your Last Name" required> <br><br>
+
+        <label for="Email">Email*:</label>
+        <input type="Email" name="Email" placeholder="Enter your Email" required>
+
+        <label for="Mobile no.">Mobile No.*:</label>
+        <input type="number" name="Mobile no." placeholder="Enter your Mobile No." maxlength="10" minlength="10"
+            required> <br><br>
+
+        <label for="Select">Select Tour Package*:</label>
+
+        <p>Frome
+            <select required name="Select">
+                <option value="">-- Select --</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Indore">Indore</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Palanpur">Palanpur</option>
+            </select>
+
+            To
+            <select required name="Select">
+                <option value="">-- Select --</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Indore">Indore</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Palanpur">Palanpur</option>
+            </select>
+        </p>
+
+        <label for="Arrival">Arrival Date*:</label>
+        <input type="date" name="Arrival" required> <br><br>
+
+        <label for="NOP">Number Of Persons*:</label>
+        <input type="number" name="NOP" placeholder="Enter Number of persons" required> <br><br>
+
+        <label for="checkbox">What would you want to avail?*</label> <br>
+        Boarding<input type="checkbox" name="checkbox" required> <br>
+        Fooding<input type="checkbox" name="checkbox" required> <br>
+        Sight seeing<input type="checkbox" name="checkbox" required> <br><br>
+
+        <label for="DCC">Discout Coupon code:</label>
+        <input type="text" name="DCC" placeholder="Enter Discout Coupon code"> <br><br>
+
+        <label for="TAC">Terms and Conditions*:</label> <br>
+        I agree<input type="radio" name="TAC" required>
+        I disagree<input type="radio" name="TAC" required> <br><br>
+
+        <input type="submit" name="submit" value="Complete reservation">
+        <input type="reset" name="reset" value="Reset Form">
+    </fieldset>
+</body>
+
+</html>
