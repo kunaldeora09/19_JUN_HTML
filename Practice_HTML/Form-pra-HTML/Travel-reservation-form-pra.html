@@ -14,19 +14,28 @@
 
         <h2>* denotes mandotory</h2>
 
+        <!-- FirstName -->
         <label for="FirstName">FirstName*:</label>
         <input type="text" name="FirstName" placeholder="Enter your First Name" required>
 
+        <!-- LastName -->
         <label for="LastName">LastName*:</label>
         <input type="text" name="LastName" placeholder="Enter your Last Name" required> <br><br>
 
+        <!-- Email -->
         <label for="Email">Email*:</label>
         <input type="Email" name="Email" placeholder="Enter your Email" required>
 
+        <!-- Mobile No. -->
         <label for="Mobile no.">Mobile No.*:</label>
         <input type="number" name="Mobile no." placeholder="Enter your Mobile No." maxlength="10" minlength="10"
             required> <br><br>
 
+        <!-- Address -->
+        <label for="address">Address*:</label>
+        <textarea name="address" cols="50" rows="5" placeholder="Enter your Address" required></textarea> <br><br>
+
+        <!-- Select Tour Package    -->
         <label for="Select">Select Tour Package*:</label>
 
         <p>Frome
@@ -60,24 +69,30 @@
             </select>
         </p>
 
+        <!-- Arrival Date -->
         <label for="Arrival">Arrival Date*:</label>
         <input type="date" name="Arrival" required> <br><br>
 
+        <!-- Number Of Persons -->
         <label for="NOP">Number Of Persons*:</label>
         <input type="number" name="NOP" placeholder="Enter Number of persons" required> <br><br>
 
+        <!-- What would you want to avail? -->
         <label for="checkbox">What would you want to avail?*</label> <br>
         Boarding<input type="checkbox" name="checkbox" required> <br>
         Fooding<input type="checkbox" name="checkbox" required> <br>
         Sight seeing<input type="checkbox" name="checkbox" required> <br><br>
 
+        <!-- Discout Coupon code -->
         <label for="DCC">Discout Coupon code:</label>
         <input type="text" name="DCC" placeholder="Enter Discout Coupon code"> <br><br>
 
+        <!-- Terms and Conditions -->
         <label for="TAC">Terms and Conditions*:</label> <br>
         I agree<input type="radio" name="TAC" required>
         I disagree<input type="radio" name="TAC" required> <br><br>
 
+        <!-- Submit and reset -->
         <input type="submit" name="submit" value="Complete reservation">
         <input type="reset" name="reset" value="Reset Form">
     </fieldset>
