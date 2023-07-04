@@ -11,6 +11,7 @@
 <body>
     <fieldset>
         <legend>Travel reservation form</legend>
+        <form>
 
         <h2>* denotes mandotory</h2>
 
@@ -78,10 +79,10 @@
         <input type="number" name="NOP" placeholder="Enter Number of persons" required> <br><br>
 
         <!-- What would you want to avail? -->
-        <label for="checkbox">What would you want to avail?*</label> <br>
-        Boarding<input type="checkbox" name="checkbox" required> <br>
-        Fooding<input type="checkbox" name="checkbox" required> <br>
-        Sight seeing<input type="checkbox" name="checkbox" required> <br><br>
+        <label for="checkbox">What would you want to avail?</label> <br>
+        Boarding<input type="checkbox" name="checkbox"> <br>
+        Fooding<input type="checkbox" name="checkbox"> <br>
+        Sight seeing<input type="checkbox" name="checkbox"> <br><br>
 
         <!-- Discout Coupon code -->
         <label for="DCC">Discout Coupon code:</label>
@@ -95,6 +96,8 @@
         <!-- Submit and reset -->
         <input type="submit" name="submit" value="Complete reservation">
         <input type="reset" name="reset" value="Reset Form">
+
+    </form>
     </fieldset>
 </body>
 

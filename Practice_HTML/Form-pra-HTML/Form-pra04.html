@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form practice 04</title>
+</head>
+
+<body>
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:- </label>
+        <input type="text" name="name" placeholder="FirstName    MiddleName    LastName" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:- </label>
+        <input type="Email" name="email" required placeholder="Enter your Email"><br><br>
+
+        <!-- password -->
+        <label for="pass">Password:- </label>
+        <input type="password" required name="pass" placeholder="Enter your password"><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:- </label>
+        <input type="number" name="phone" placeholder="Enter your Phone number" required><br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender:- </label>
+        Male:<input type="radio" required name="gender">
+        Female:<input type="radio" required name="gender">
+        Other:<input type="radio" required name="gender"><br><br>
+        
+        <!-- Language -->
+        <label for="language">Language:- </label>
+        <select name="language" required>
+            <option value="">Select Language</option>
+            <option value="">C language</option>
+            <option value="">HTML and CSS</option>
+            <option value="">Java</option>
+            <option value="">Python</option>
+            <option value="">PHP</option>
+            <option value="">Ruby</option>
+        </select><br><br>
+
+        <!-- Zip Code -->
+        <label for="zip">Zip Code:- </label>
+        <input type="text" name="zip" required placeholder="Enter Zip Code"><br><br>
+
+        <!-- About -->
+        <label for="about">About:- </label>
+        <textarea name="about" cols="30" rows="3" required placeholder="Write about yourself...."></textarea><br><br>
+
+        <!-- submit and reset -->
+        <input type="submit" name="submit" value="Register">
+        <input type="reset" name="reset" value="Cancel">
+        
+    </form>
+</body>
+
+</html>
