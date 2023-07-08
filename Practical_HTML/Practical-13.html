@@ -55,7 +55,10 @@
 
         <!-- Email Address -->
         <label for="email">Email Address</label>
-        <input type="Email" placeholder="Enter your email" required> <br><br>
+        <input type="Email" list="email" placeholder="Enter your email" required> <br><br>
+        <datalist id="email">
+            <option value="zdcds@gmail.com"></option>
+        </datalist>
 
         <!-- password -->
         <label for="pass">Password</label>
@@ -112,6 +115,7 @@
 
         <input type="checkbox" name="check" required>I here by declare that the above information provided is true and correct. <br><br>
 
+        <!-- Captcha -->
         <div class="captcha">
         <input class="cap" type="checkbox" required>&nbsp;
         <span>I am not a robot</span>
