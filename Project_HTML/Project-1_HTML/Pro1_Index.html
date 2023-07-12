@@ -7,8 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-1</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         a{
             text-decoration: none;
+            color: burlywood;
+        }
+        .nav{
+            font-size: 20px;
+            background-image: linear-gradient(red, blue);
         }
     </style>
 </head>
@@ -20,22 +30,37 @@
         <!-- Navbar -->
         <thead width="100%">
             <tr>
-                <th width="10%"><a href=""><img src="../../ImageWD/Kunal.jpeg" width="300px" height="75px" alt="Image"></a></th>
-                <th width="15%"><a href="">Home</a></th>
-                <th width="15%"><a href="../Project-1_HTML/Pro-1_practice.html" target="myname">Practice</a></th>
-                <th width="15%"><a href="../Project-1_HTML/Pro1-task.html" target="myname">Task</a> </th>
-                <th width="15%"><a href="../Project-1_HTML/Pro-1_Project.html" target="myname">Project</a></th>
-                <th width="15%"><a href="../Project-1_HTML/Pro-1_practical.html" target="myname">Practical</a></th>
-                <th width="15%"><a href="../Project-1_HTML/Pro-1_about.html" target="display">About</a></th>
+
+                <!-- Logo -->
+                <th><a href=""><img src="../../ImageWD/Kunal.jpeg" width="100%" height="75px" alt="Image"></a></th>
+
+                <!-- Home -->
+                <th class="nav" width="15%"><a href="">Home</a></th>
+                <th class="nav" width="15%"><a href="../Project-1_HTML/Pro-1_practice.html" target="myname">Practice</a></th>
+
+                <!-- Task -->
+                <th class="nav" width="15%"><a href="../Project-1_HTML/Pro1-task.html" target="myname">Task</a> </th>
+
+                <!-- Project -->
+                <th class="nav" width="15%"><a href="../Project-1_HTML/Pro-1_Project.html" target="myname">Project</a></th>
+
+                <!-- Practical -->
+                <th class="nav" width="15%"><a href="../Project-1_HTML/Pro-1_practical.html" target="myname">Practical</a></th>
+
+                <!-- InterView-Questions -->
+                <th class="nav" width="15%"><a href="../Project-1_HTML/Pro-1_InterView.html" target="myname">InterView</a></th>
+
+                <!-- About -->
+                <th class="nav" width="15%"><a href="../Project-1_HTML/Pro-1_about.html" target="display">About Me</a></th>
             </tr>
         </thead>
         <!-- Navbar End -->
 
         <!-- Content And Display -->
-        <tbody height="450px">
+        <tbody height="487px">
             <tr>
-                <td><iframe height="450px" src="" name="myname" frameborder="0"></iframe></td>
-                <td colspan="6"><iframe src="" height="460px" width="957px" name="display" frameborder="0"></iframe>
+                <td><iframe height="481px" src="" name="myname" frameborder="0"></iframe></td>
+                <td colspan="7"><iframe src="" height="481px" width="976px" name="display" frameborder="0"></iframe>
                 </td>
             </tr>
         </tbody>
