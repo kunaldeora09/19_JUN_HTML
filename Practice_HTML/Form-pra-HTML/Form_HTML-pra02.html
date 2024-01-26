@@ -1,157 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form practice 02</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <fieldset>
-        <legend>Form practice 02</legend>
-        <form>
-
+      <legend>Form practice 02</legend>
+      <form>
         <!-- FirstName -->
         <label for="fname">FirstName:- </label>
-        <input type="text" name="fname" value="Kunal" readonly> <br><br>
+        <input
+          type="text"
+          name="fname"
+          value="Kunal"
+          pattern="[a-zA-Z]{2,10}"
+          readonly
+        />
+        <br /><br />
 
         <!-- LastName -->
         <label for="lname">LastName:- </label>
-        <input type="text" name="lname" placeholder="Enter Last name" required> <br><br>
+        <input
+          type="text"
+          name="lname"
+          placeholder="Enter Last name"
+          required
+          pattern="[a-zA-Z]{2,10}"
+        />
+        <br /><br />
 
         <!-- textarea -->
         <label for="address">Address:- </label>
-        <textarea name="address" cols="50" placeholder="textarea for address" rows="5"></textarea> <br><br>
+        <textarea
+          name="address"
+          cols="50"
+          placeholder="textarea for address"
+          rows="5"
+        ></textarea>
+        <br /><br />
 
         <!-- Email -->
         <label for="Email">Email:- </label>
-        <input type="Email" name="Email" placeholder="Enter Email" required> <br><br>
+
+        <input
+          type="Email"
+          name="Email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          placeholder="Enter Email"
+          required
+        />
+        <br /><br />
 
         <!-- Password -->
         <label for="password">Password:- </label>
-        <input type="password" name="password" placeholder="Enter password" required> <br><br>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+          pattern="[a-zA-Z0-9._,%+\#@$*;'-]{8,16}"
+        />
+        <br /><br />
 
         <!-- Date Of Birth -->
         <label for="DOB">Date Of Birth:- </label>
-        <input type="date" name="DOB" required> <br><br>
+        <input type="date" name="DOB" required /> <br /><br />
 
         <!-- Time -->
         <label for="time">Time:- </label>
-        <input type="time" name="time" required> <br><br>
+        <input type="time" name="time" required /> <br /><br />
 
         <!-- Range -->
         <label for="range">Range:- </label>
-        <input type="range" name="range" required> <br><br>
+        <input type="range" name="range" required /> <br /><br />
 
         <!-- Date And Time -->
         <label for="date-time">Date and Time:- </label>
-        <input type="datetime-local" name="date-time" required> <br><br>
+        <input type="datetime-local" name="date-time" required /> <br /><br />
 
         <!-- Month -->
         <label for="month">Month:- </label>
-        <input type="month" name="month" required> <br><br>
+        <input type="month" name="month" required /> <br /><br />
 
         <!-- Tel -->
         <label for="tel">Tel:- </label>
-        <input type="tel" name="tel" placeholder="Enter Tel" required> <br><br>
+        <input type="tel" name="tel" placeholder="Enter Tel" required />
+        <br /><br />
 
         <!-- URL -->
         <label for="url">URL:- </label>
-        <input type="url" placeholder="Enter URL" name="url" required> <br><br>
+        <input type="url" placeholder="Enter URL" name="url" required />
+        <br /><br />
 
         <!-- Week -->
         <label for="week">Week:- </label>
-        <input type="Week" name="week" required> <br><br>
+        <input type="Week" name="week" required /> <br /><br />
 
         <!-- Image -->
         <label for="image">Image:- </label>
-        <input type="image" name="image" required> <br><br>
+        <input type="image" name="image" required /> <br /><br />
 
         <!-- Hidden -->
         <label for="hidden">Hidden:- </label>
-        <input type="hidden" name="hidden" required> <br><br>
+        <input type="hidden" name="hidden" required /> <br /><br />
 
         <!-- File -->
         <label for="File">File:- </label>
-        <input type="file" name="File" required> <br><br>
+        <input type="file" name="File" required /> <br /><br />
 
         <!-- Search -->
         <label for="search">Search:- </label>
-        <input type="search" name="search" placeholder="Search" required> <br><br>
+        <input type="search" name="search" placeholder="Search" required />
+        <br /><br />
 
         <!-- Color -->
         <label for="color">Color:- </label>
-        <input type="color" name="color" required> <br><br>
+        <input type="color" name="color" required /> <br /><br />
 
         <!-- Button -->
         <label for="button">Button:- </label>
-        <input type="button" name="button" value="button" required> <br><br>
+        <input type="button" name="button" value="button" required />
+        <br /><br />
 
         <!-- Submit -->
         <label for="submit">Submit:- </label>
-        <input type="submit" name="submit"> <br><br>
+        <input type="submit" name="submit" /> <br /><br />
 
         <!-- Reset -->
         <label for="reset">Reset:- </label>
-        <input type="reset" name="reset"> <br><br>
+        <input type="reset" name="reset" /> <br /><br />
 
         <!-- Gender -->
         <label for="gender">Gender:- </label>
-        Male<input type="radio" name="gender">
-        Female<input type="radio" name="gender"> <br><br>
+        Male<input type="radio" name="gender" /> Female<input
+          type="radio"
+          name="gender"
+        />
+        <br /><br />
 
         <!-- Checkbox -->
         <label for="checkbox">Checkbox:- </label>
-        Car<input type="checkbox" name="checkbox">
-        Bike<input type="checkbox" name="checkbox"> <br><br>
+        Car<input type="checkbox" name="checkbox" /> Bike<input
+          type="checkbox"
+          name="checkbox"
+        />
+        <br /><br />
 
         <!-- Select Option -->
         <label for="select">Select:- </label>
         <select name="select">
-            <option value="">--Select--</option>
-            <option value="Doraemon">Doraemon</option>
-            <option value="Mickey Mouse">Mickey Mouse</option>
-            <option value="LuckyMan">LuckyMan</option>
-            <option value="Shinchan">Shinchan</option>
-        </select> <br><br>
+          <option value="">--Select--</option>
+          <option value="Doraemon">Doraemon</option>
+          <option value="Mickey Mouse">Mickey Mouse</option>
+          <option value="LuckyMan">LuckyMan</option>
+          <option value="Shinchan">Shinchan</option>
+        </select>
+        <br /><br />
 
         <!-- Select Option Group  -->
         <label for="optgroup">Option Group:- </label>
         <select name="optgroup">
-            <option value="">--Select--</option>
+          <option value="">--Select--</option>
 
-            <optgroup label="Movies">
-                <option value="The Kerala Story">The Kerala Story</option>
-                <option value="Bharat">Bharat</option>
-                <option value="Hacked">Hacked</option>
-                <option value="V">V</option>
-            </optgroup>
+          <optgroup label="Movies">
+            <option value="The Kerala Story">The Kerala Story</option>
+            <option value="Bharat">Bharat</option>
+            <option value="Hacked">Hacked</option>
+            <option value="V">V</option>
+          </optgroup>
 
-            <optgroup label="Series">
-                <option value="Highway Love">Highway Love</option>
-                <option value="College Romance">College Romance</option>
-                <option value="Flames">Flames</option>
-                <option value="Mismatched">Mismatched</option>
-            </optgroup>
-        </select> <br><br>
+          <optgroup label="Series">
+            <option value="Highway Love">Highway Love</option>
+            <option value="College Romance">College Romance</option>
+            <option value="Flames">Flames</option>
+            <option value="Mismatched">Mismatched</option>
+          </optgroup>
+        </select>
+        <br /><br />
 
         <!-- datalist -->
         <label for="list">Datalist:- </label>
-        <input list="datalist" name="list" placeholder="Datalist"> <br>
+        <input list="datalist" name="list" placeholder="Datalist" /> <br />
         <datalist id="datalist">
-          <option value="Python">
-          <option value="C Language">
-          <option value="JavaScript">
-          <option value="HTML">
-          <option value="CSS">
-          <option value="Database">
+          <option value="Python"></option>
+          <option value="C Language"></option>
+          <option value="JavaScript"></option>
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="Database"></option>
         </datalist>
-
-    </form>
+      </form>
     </fieldset>
-</body>
-
+  </body>
 </html>

@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Practice 01</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Form Practice 01</h2>
     <form action="">
+      <!-- FirstName -->
+      <label for="FirstName">FirstName:- </label>
+      <input
+        type="text"
+        name="FirstName"
+        placeholder="Enter your first name"
+        pattern="[a-zA-Z]{2,10}"
+        required
+      />
+      <br /><br />
 
-        <!-- FirstName -->
-        <label for="FirstName">FirstName:- </label>
-        <input type="text" name="FirstName" placeholder="Enter your first name" required> <br><br>
+      <!-- LastName -->
+      <label for="LastName">LastName:- </label>
+      <input
+        type="text"
+        name="LastName"
+        placeholder="Enter your last name"
+        pattern="[a-zA-Z]{2,10}"
+        required
+      />
+      <br /><br />
 
-        <!-- LastName -->
-        <label for="LastName">LastName:- </label>
-        <input type="text" name="LastName" placeholder="Enter your last name" required> <br><br>
+      <!-- Date Of Birth -->
+      <label for="DOB">Date Of Birth:- </label>
+      <input
+        type="date"
+        name="DOB"
+        placeholder="Enter your birth date"
+        required
+      />
+      <br /><br />
 
-        <!-- Date Of Birth -->
-        <label for="DOB">Date Of Birth:- </label>
-        <input type="date" name="DOB" placeholder="Enter your birth date" required> <br><br>
+      <!-- Address -->
+      <label for="address">Address:- </label>
+      <textarea
+        name="address"
+        placeholder="Enter your Address"
+        cols="50"
+        rows="5"
+        required
+      ></textarea>
+      <br /><br />
 
-        <!-- Address -->
-        <label for="address">Address:- </label>
-        <textarea name="address" placeholder="Enter your Address" cols="50" rows="5" required></textarea> <br><br>
+      <!-- Email -->
+      <label for="Email">Email:- </label>
+      <input
+        type="Email"
+        name="Email"
+        placeholder="Enter your email"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        required
+      />
+      <br /><br />
 
-        <!-- Email -->
-        <label for="Email">Email:- </label>
-        <input type="Email" name="Email" placeholder="Enter your email" required> <br><br>
+      <!-- Mobile No. -->
+      <label for="Mobile no.">Mobile No.:- </label>
+      <input
+        type="number"
+        name="Mobile no."
+        placeholder="Enter your Mobile no."
+        required
+      />
+      <br /><br />
 
-        <!-- Mobile No. -->
-        <label for="Mobile no.">Mobile No.:- </label>
-        <input type="number" name="Mobile no." placeholder="Enter your Mobile no." required> <br><br>
-
-        <!-- submit and reset -->
-        <button type="submit" name="submit">Submit</button>
-        <button type="reset" name="reset">Reset</button>
+      <!-- submit and reset -->
+      <button type="submit" name="submit">Submit</button>
+      <button type="reset" name="reset">Reset</button>
     </form>
-</body>
-
+  </body>
 </html>
