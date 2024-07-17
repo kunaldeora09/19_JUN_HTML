@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practical-13</title>
 
-    <!-- CSS Start -->
     <style>
       .captcha {
         width: 200px;
@@ -25,73 +24,72 @@
         height: 22px;
       }
     </style>
-    <!-- CSS End -->
   </head>
   <body>
     <h2>13. Create registration form with all fields and validation.</h2>
-
     <form>
       <h2>STUDENT REGISTRATION FORM</h2>
 
-      <!-- First Name -->
-      <label for="fname">First Name </label>
+      <label for="fname">First Name:- </label>
       <input
         type="text"
-        name="fname"
+        id="fname"
         placeholder="Enter First Name"
         required
       /><br /><br />
 
-      <!-- Last Name -->
-      <label for="lname">Last Name</label>
+      <label for="lname">Last Name:- </label>
       <input
         type="text"
-        name="lname"
+        id="lname"
         placeholder="Enter Last Name"
         required
       /><br /><br />
 
-      <!-- Gender -->
-      <label for="gender">Gender</label>
-      <input type="radio" name="gender" required />Male
-      <input type="radio" name="gender" required />Female <br /><br />
-
-      <!-- Age -->
-      <label for="age">Age</label>
-      <input type="number" name="age" placeholder="Enter your age" required />
+      <label for="gender">Gender:- </label>
+      <input type="radio" name="gender" id="male" required /><label for="male"
+        >Male</label
+      >
+      <input type="radio" name="gender" id="female" required /><label
+        for="female"
+        >Female</label
+      >
       <br /><br />
 
-      <!-- Date of Birth -->
-      <label for="DOB">Date of Birth</label>
-      <input type="date" name="DOB" required /> <br /><br />
+      <label for="age">Age:- </label>
+      <input type="number" id="age" placeholder="Enter your age" required />
+      <br /><br />
 
-      <!-- Email Address -->
-      <label for="email">Email Address</label>
+      <label for="DOB">Date of Birth:- </label>
+      <input type="date" id="DOB" required /> <br /><br />
+
+      <label for="email">Email Address:- </label>
       <input
         type="Email"
         list="email"
+        id="email"
         placeholder="Enter your email"
         required
       />
       <br /><br />
+
       <datalist id="email">
         <option value="zdcds@gmail.com"></option>
+        <option value="kunaldeora09@gmail.com"></option>
       </datalist>
 
-      <!-- password -->
-      <label for="pass">Password</label>
+      <label for="pass">Password:- </label>
       <input
         type="password"
-        name="pass"
+        id="pass"
         placeholder="Enter your password min 8 characters"
         minlength="8"
         required
       />
       <br /><br />
 
-      <!-- Phone number -->
-      <label for="phone">Phone Number</label>
-      <select name="phone" required>
+      <label for="phone">Phone Number:- </label>
+      <select id="phone" required>
         <option value="">Phone</option>
         <option value="93">+93</option>
         <option value="355">+355</option>
@@ -104,18 +102,12 @@
         <option value="229">+229</option>
         <option value="55">+55</option>
       </select>
-      <input
-        type="number"
-        name="phone"
-        placeholder="Enter your phone number"
-        required
-      />
+      <input type="number" placeholder="Enter your phone number" required />
       <br /><br />
 
-      <!-- Address -->
-      <label for="address">Address</label>
+      <label for="address">Address:- </label>
       <textarea
-        name="address"
+        id="address"
         cols="35"
         rows="5"
         placeholder="Enter your address"
@@ -123,9 +115,8 @@
       ></textarea>
       <br /><br />
 
-      <!-- State -->
       <label for="state">State</label>
-      <select name="state" required>
+      <select id="state" required>
         <option value="">Select State</option>
         <option value="Andhra Pradesh">Andhra Pradesh</option>
         <option value="Assam">Assam</option>
@@ -137,26 +128,35 @@
       </select>
       <br /><br />
 
-      <!-- Pin Code -->
       <label for="pin">Pin Code</label>
-      <input type="text" name="pin" placeholder="Enter your pin code" />
+      <input type="text" id="pin" placeholder="Enter your pin code" />
       <br /><br />
 
-      <!-- Hobbies -->
       <label for="hobbies">Hobbies</label>
-      <input type="checkbox" name="hobbies" />Music
-      <input type="checkbox" name="hobbies" />Movies
-      <input type="checkbox" name="hobbies" />Sports
-      <input type="checkbox" name="hobbies" />Travel <br /><br />
+      <input type="checkbox" name="hobbies" id="music" /><label for="music"
+        >Music</label
+      >
+      <input type="checkbox" name="hobbies" id="movies" /><label for="movies"
+        >Movies</label
+      >
+      <input type="checkbox" name="hobbies" id="sports" /><label for="sports"
+        >Sports</label
+      >
+      <input type="checkbox" name="hobbies" id="travel" /><label for="travel"
+        >Travel</label
+      >
+      <br /><br />
 
-      <!-- Upload Photo -->
-      <label for="photo">Upload Photo</label>
-      <input type="file" name="photo" required /> <br /><br />
+      <label for="photo">Upload Photo:- </label>
+      <input type="file" id="photo" required /> <br /><br />
 
-      <input type="checkbox" name="check" required />I here by declare that the
-      above information provided is true and correct. <br /><br />
+      <input type="checkbox" id="check" required />
+      <label for="check"
+        >I here by declare that the above information provided is true and
+        correct.</label
+      >
+      <br /><br />
 
-      <!-- Captcha -->
       <div class="captcha">
         <input class="cap" type="checkbox" required />&nbsp;
         <span>I am not a robot</span>
